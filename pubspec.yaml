@@ -25,6 +25,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   rect_getter: ^0.0.1
   gradient_text: ^1.0.2
+  fancy_on_boarding: ^1.6.0
 
 dev_dependencies:
   flutter_test:

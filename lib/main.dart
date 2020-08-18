@@ -85,12 +85,24 @@ class _MyAppState extends State<MyApp> with TickerProviderStateMixin {
               child: ScaleTransition(
                 scale: _scaleAnimation,
                 child: isLastPage
-                    ? FloatingActionButton(
+                    ? FloatingActionButton.extended(
+                      elevation: 4.0,
+                      icon: const  Image(
+                                  image: AssetImage("assets/google_logo.png"),
+                                  height: 35.0),
+                      label: const Text('Sign In', style: TextStyle(color: Colors.black),),
                         backgroundColor: Colors.white,
-                        child: Icon(Icons.arrow_forward, color: Colors.black),
                         onPressed: () {},
                       )
-                    : Container(),
+                    : FloatingActionButton.extended(
+                      elevation: 4.0,
+                      icon: const  Image(
+                                  image: AssetImage("assets/google_logo.png"),
+                                  height: 35.0),
+                      label: const Text('Sign In', style: TextStyle(color: Colors.black),),
+                        backgroundColor: Colors.white,
+                        onPressed: () {},
+                      ),
               ),
             ),
           ],
@@ -157,3 +169,5 @@ class _MyAppState extends State<MyApp> with TickerProviderStateMixin {
     );
   }
 }
+
+
