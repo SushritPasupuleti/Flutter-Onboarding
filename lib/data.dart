@@ -13,7 +13,7 @@ var pageList = [
       titleGradient: [Color(0xFFE2859F), Color(0xFFFCCF31)]),
   PageModel(
       imageUrl: "assets/3-3.png",
-      title: "YOUR TIME",
+      title: "@ YOUR TIME",
       body: "LET'S HIKE UP!",
       titleGradient: [Color(0xFF5EFCE8), Color(0xFF736EFE)]),
 ];

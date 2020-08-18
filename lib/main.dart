@@ -49,6 +49,15 @@ class _MyAppState extends State<MyApp> with TickerProviderStateMixin {
             end: Alignment.bottomCenter),
       ),
       child: Scaffold(
+        floatingActionButton: FloatingActionButton.extended(
+                      elevation: 4.0,
+                      icon: const  Image(
+                                  image: AssetImage("assets/google_logo.png"),
+                                  height: 35.0),
+                      label: const Text('Sign In', style: TextStyle(color: Colors.black),),
+                        backgroundColor: Colors.white,
+                        onPressed: () {},
+                      ),
         backgroundColor: Colors.transparent,
         body: Stack(
           fit: StackFit.expand,
@@ -75,35 +84,9 @@ class _MyAppState extends State<MyApp> with TickerProviderStateMixin {
             ),
             Positioned(
               left: 30.0,
-              bottom: 55.0,
+              bottom: 35.0,
               width: 160.0,
               child: PageIndicator(currentPage, pageList.length),
-            ),
-            Positioned(
-              right: 30.0,
-              bottom: 30.0,
-              child: ScaleTransition(
-                scale: _scaleAnimation,
-                child: isLastPage
-                    ? FloatingActionButton.extended(
-                      elevation: 4.0,
-                      icon: const  Image(
-                                  image: AssetImage("assets/google_logo.png"),
-                                  height: 35.0),
-                      label: const Text('Sign In', style: TextStyle(color: Colors.black),),
-                        backgroundColor: Colors.white,
-                        onPressed: () {},
-                      )
-                    : FloatingActionButton.extended(
-                      elevation: 4.0,
-                      icon: const  Image(
-                                  image: AssetImage("assets/google_logo.png"),
-                                  height: 35.0),
-                      label: const Text('Sign In', style: TextStyle(color: Colors.black),),
-                        backgroundColor: Colors.white,
-                        onPressed: () {},
-                      ),
-              ),
             ),
           ],
         ),
