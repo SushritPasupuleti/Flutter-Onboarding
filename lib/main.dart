@@ -125,25 +125,25 @@ class _MyAppState extends State<MyApp> with TickerProviderStateMixin {
                   page.title,
                   gradient: LinearGradient(colors: page.titleGradient),
                   style: TextStyle(
-                      fontSize: 100.0,
+                      fontSize: 45.0,
                       fontFamily: "Montserrat-Black",
                       letterSpacing: 1.0),
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 30.0, left: 22.0),
+                padding: EdgeInsets.only(top: 10.0, left: 12.0),
                 child: GradientText(
                   page.title,
                   gradient: LinearGradient(colors: page.titleGradient),
                   style:
-                      TextStyle(fontSize: 70.0, fontFamily: "Montserrat-Black"),
+                      TextStyle(fontSize: 45.0, fontFamily: "Montserrat-Black"),
                 ),
               ),
             ],
           ),
         ),
         Container(
-          padding: const EdgeInsets.only(left: 34.0, top: 12.0),
+          padding: const EdgeInsets.only(left: 34.0, top: 2.0),
           transform: Matrix4.translationValues(0, 50.0 * y, 0),
           child: Text(
             page.body,
